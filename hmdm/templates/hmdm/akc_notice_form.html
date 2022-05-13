@@ -1,0 +1,17 @@
+<form action="" method="post">
+    {% csrf_token %}
+    <fieldset>
+        <legend>AKC下单通知</legend>
+        <div>
+           <label for="po_number">AKC订单号：</label>
+           <input type="text" name="po_number" id="po_number">
+        </div>
+        <div>
+            <label for="email">email:</label>
+            <input type="email" name="email" value="用于通知下单人AKC之序列号">
+        </div>
+        <div>
+            <input type="submit" value="提交">
+        </div>
+    </fieldset>
+</form>
